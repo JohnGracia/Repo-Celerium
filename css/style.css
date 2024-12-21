@@ -1,0 +1,113 @@
+* {
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imagen {
+    width: 180px; height: 130px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+/*header {
+    text-align: left;
+    width: 100%;
+    height: 800px;
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}*/
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+header section p a {
+    background-color: orangered;
+    font-size: larger;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    display: inline;
+    border: 4px solid black;
+}
+
+header section nav ul li {
+    display: inline;
+    background-color: rgb(0, 0, 0);
+    border: 4px solid orange;
+    padding: 3px;
+    justify-content: center;
+    list-style: none;
+}
+
+header section nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+div footer nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    color: rgb(59, 32, 209);
+    font-family: "Michroma", sans-serif;
+    font-size: 70px;
+    position: relative;
+    top: 1px;
+    right: 10px;
+}
+
+.titulos {
+    color: rgb(60, 28, 204);
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Michroma", sans-serif;
+}
+
+.introduccion {
+    color: rgb(0, 0, 0);
+    font-size: 1.1em;
+}
+
+.imagen-1 {
+    width: 180px; height: 130px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+
+.redes-sociales {
+    width: 40px;
+    height: 40px;
+    border: 4px solid orange;
+}
+
+.whatsapp {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+    border: 4px solid orange;
+}
+
+.intro {
+    width: 400px; height: 300px;
+}
+
+
