@@ -1,58 +1,195 @@
 * {
-    margin: 1;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
 }
-
-.imagen {
-    width: 180px; height: 130px;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 10px;
-    left: 10px;
-}
-
-/*header {
-    text-align: left;
-    width: 100%;
-    height: 800px;
-    background-image: url("../img/fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}*/
 
 body {
     background-color: rgb(255, 255, 255);
 }
 
-header section p a {
-    background-color: orangered;
-    font-size: larger;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: sans-serif;
-    display: inline;
-    border: 4px solid black;
+header {
+    background-color: white;
 }
 
-header section nav ul li {
-    display: inline;
-    background-color: rgb(0, 0, 0);
-    border: 4px solid orange;
-    padding: 3px;
+header nav {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav .logo {
+    mix-blend-mode: multiply;
+    width: 180px;
+    height: 130px;
+    margin-top: 30px;
+}
+
+header h1 {
+    text-align: center;
+    color: rgb(59, 32, 209);
+    font-family: "Michroma", sans-serif;
+    font-size: 4vw;
+    position: relative;
+}
+
+header nav ul {
+    text-decoration: none;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    list-style: none;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+    flex-wrap: wrap;
 }
 
-header section nav ul li a {
+header nav ul li {
+    border: 10px solid white;
+    padding: 25px;
+    justify-content: center;
+}
+
+.titulos {
+    color: rgb(60, 28, 204);
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Michroma", sans-serif;
+}
+
+main div {
+    width: 100%;
+    height: 100%;
+}
+
+/* Grilla descripción empresa */
+.grid-intro {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 0fr 0fr;
+    grid-template-rows: 80px 150px;
+    gap: 40px;
+}
+
+.grid-imagen {
+    width: 320px;
+    height: 250px;
+}
+
+.grid-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Grilla descripción profe */
+.grid-profe {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 0fr 0fr;
+    grid-template-rows: 80px 480px;
+    gap: 40px;
+}
+
+.grid-profesora {
+    width: 500px;
+    height: 580px;
+}
+
+.grid-profesora img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section p {
+    color: rgb(0, 0, 0);
+    font-size: 105%;
+    text-align: justify;
+}
+
+.imagen-1 {
+    width: 180px;
+    height: 130px;
+    mix-blend-mode: multiply;
+}
+
+/* Botón para registro */
+.boton {
+    width: 100%;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background-color: rgb(60, 28, 204);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+}
+
+.boton:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Botón volver al inicio */
+.boton-inicio {
+    width: 15%;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Michroma", sans-serif;
+    font-size: medium;
+}
+
+.boton-inicio:hover {
+    background-color: rgb(170, 170, 170);
+    color: black;
+}
+
+/* FOOTER */
+
+footer nav {
+    background-color: rgb(69, 199, 251);
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+footer nav .logo1 {
+    margin-top: 50px;
+    mix-blend-mode: multiply;
+    width: 180px;
+    height: 130px;
+    margin-top: 30px;
+}
+
+.grid-footer {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 70px 120px;
+}
+
+footer nav ul li {
+    padding: 50px;
+    justify-content: center;
 }
 
 div footer nav ul li a {
@@ -61,53 +198,100 @@ div footer nav ul li a {
     font-family: sans-serif;
 }
 
-header h1 {
-    text-align: center;
-    color: rgb(59, 32, 209);
-    font-family: "Michroma", sans-serif;
-    font-size: 70px;
-    position: relative;
-    top: 1px;
-    right: 10px;
-}
-
-.titulos {
-    color: rgb(60, 28, 204);
-    text-decoration: underline;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: "Michroma", sans-serif;
-}
-
-.introduccion {
-    color: rgb(0, 0, 0);
-    font-size: 1.1em;
-}
-
-.imagen-1 {
-    width: 180px; height: 130px;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-}
-
-
+/* Iconos redes sociales */
 .redes-sociales {
-    width: 40px;
-    height: 40px;
-    border: 4px solid orange;
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+    border: 4px solid white;
+    margin-left: 20px;
 }
 
 .whatsapp {
     position: fixed;
-    width: 40px;
-    height: 40px;
-    bottom: 10px;
-    right: 10px;
-    border: 4px solid orange;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid white;
 }
 
-.intro {
-    width: 400px; height: 300px;
+/*Texto copyright*/
+div footer h3 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Michroma", sans-serif;
+    font-size: small;
+    text-decoration: none;
 }
 
+/* RESPONSIVE */
 
+@media screen and (max-width:1160px) {
+    .grid-footer {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 150px;
+        margin-right: 150px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 0fr;
+        grid-template-rows: 150px;
+        flex-direction: column;
+        gap: 1px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .grid-intro {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 180px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .grid-profe {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 180px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .boton {
+        width: 100%;
+        padding: 10px 30px;
+        margin-top: 320px;
+        background-color: rgb(60, 28, 204);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: "Michroma", sans-serif;
+        font-size: large;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .grid-footer {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 150px;
+        margin-right: 150px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 0fr;
+        grid-template-rows: 150px;
+        flex-direction: column;
+        gap: 1px;
+        flex-wrap: wrap;
+    }
+}

@@ -1,111 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- CSS -->
-<link rel="stylesheet" href="./css/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 
-<title>CeleriumPatinaje</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
+    <title>CeleriumPatinaje</title>
 </head>
+
 <body>
 
-<header>    
-    <img src="./img/celerium.jpg" alt ="LogoCelerium" class="imagen">
-    <h1>CELERIUMPATINAJE</h1>
-        
-<!-- Menú - Enlaces principales y de inicio sesión / regístrate-->
-<section>
-    <nav class="menu">
-        <ul>
-            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-            <li><a href="./pages/horarios.html">Horarios</a></li>
-            <li><a href="./pages/ubicacion.html">Ubicación</a></li>
-            <li><a href="./pages/galeria.html">Galería</a></li>
-            <li><a href="./pages/descargas.html">Descargas</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <p>
-        <a href="./pages/iniciar_sesion.html">Iniciar Sesión</a>
-        <a href="./pages/registrate.html">Regístrate</a>
-    </p>
-</section>
-</header>
+    <!-- Header (logo y barra de navegación) -->
+    <header>
+        <nav>
+            <a href="#"><img src="./img/celerium.jpg" class="logo" alt="LogoCelerium">
+            </a>
+            <ul>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/horarios.html">Horarios</a></li>
+                <li><a href="./pages/ubicacion.html">Ubicación</a></li>
+                <li><a href="./pages/galeria.html">Galería</a></li>
+                <li><a href="./pages/descargas.html">Descargas</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>CELERIUMPATINAJE</h1>
+    </header>
 
-<main>
-    
-<!-- Párrafo descripción de la empresa-->
-    <h2 class="titulos">Bienvenidos a Celerium</h2>
-    <p class="introduccion">La escuela de formación deportiva en patinaje CELERIUM, busca desarrollar en niños y jóvenes sus capacidades físicas coordinativas y condicionales así como los valores que proporciona la práctica del deporte, como lo son el trabajo en equipo, la disciplina, responsabilidad, el respeto por sí y por el otro, por medio del deporte, específicamente el patinaje en algunas de sus modalidades.</p>
+    <!-- Grid (descripción empresa) -->
+    <main>
+        <div>
+            <section class="grid-intro">
+                <img src="./img/introduccion.jpg" alt="introduccion" class="grid-imagen">
+                <p class="grid-imagen">La escuela de formación deportiva en patinaje CELERIUM, busca desarrollar en
+                    niños y
+                    jóvenes sus capacidades físicas coordinativas y condicionales así como los valores que proporciona
+                    la
+                    práctica del deporte, como lo son el trabajo en equipo, la disciplina, responsabilidad, el respeto
+                    por
+                    sí y
+                    por el otro, por medio del deporte, específicamente el patinaje en algunas de sus modalidades.</p>
 
-<!-- Imagen correspondiente al párrafo -->
-    <img src="./img/introduccion.jpg" alt ="introduccion" class="intro">
-</main>
+            </section>
+        </div>
+    </main>
 
-<!-- Logo de la empresa para footer -->
-<div>
+    <!-- Botón de registro -->
+    <aside>
+        <a href="./pages/contacto.html">
+            <button class="boton"> Inscribete aquí</button>
+        </a>
+    </aside>
+
+    <!-- Grid (descripción profe) -->
+    <main>
+        <div>
+            <section class="grid-profe">
+                <img src="./img/profe.png" alt="introduccion" class="grid-profesora">
+                <p class="grid-imagen">Estefanía es una profesora de patinaje dedicada y entusiasta, que trabaja con
+                    niños de diversas edades y niveles. Con una sonrisa cálida y una paciencia infinita, logra crear un
+                    ambiente de confianza y alegría en la pista. Su energía es contagiosa, y cada clase se convierte en
+                    una divertida aventura donde los pequeños no solo aprenden a patinar, sino que también desarrollan
+                    habilidades como la coordinación, el equilibrio y el trabajo en equipo. Tiene una gran capacidad
+                    para adaptarse a las necesidades de cada niño, brindando instrucciones claras y motivadoras, y
+                    celebrando los logros de todos, por pequeños que sean. Siempre atenta a la seguridad, se asegura de
+                    que cada alumno se sienta cómodo y respaldado, mientras fomenta la disciplina y el esfuerzo. Gracias
+                    a su enfoque cariñoso y profesional, los niños no solo mejoran en el patinaje, sino que también
+                    disfrutan cada momento en la pista.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Botón de registro -->
+    <aside>
+        <a href="./pages/contacto.html">
+            <button class="boton"> Haz parte de nuestro equipo </button>
+        </a>
+    </aside>
+
+    <!-- Footer (logo y menú de acceso rápido) -->
+    <div>
         <footer>
-            <img src="./img/celerium.jpg" alt ="LogoCelerium" class="imagen-1">
-            
- <!-- Enlaces del footer / logos redes sociales -->           
-            <nav class="menu">
-                <ul>
+            <nav>
+                <a href="#"><img src="./img/celerium.jpg" class="logo1" alt="LogoCelerium">
+                </a>
+                <ul class="grid-footer">
                     <h2 class="titulos">
                         Expertos en formación desde 2015
                     </h2>
-                    <li><a href="./pages/nosotros.html">Sobre CeleriumPatinaje</a></li>
-                    <li><a href="./pages/horarios.html">Paquetes de clases</a></li>
-                    <li><a href="./pages/horarios.html">Requisitos</a></li>
-                    <li><a href="./pages/nosotros.html">Nuestros Profes</a></li>
-                    
                     <h2 class="titulos">
                         Recursos
-                    </h2>   
-                    <li><a href="./pages/ubicacion.html">Ubicación</a></li>
-                    <li><a href="./pages/galeria.html">Galería</a></li>
-                    <li><a href="./pages/descargas.html">Descargas</a></li>
-
+                    </h2>
                     <h2 class="titulos">
                         Acceso Rápido
                     </h2>
-                    <li><a href="./pages/contacto.html">Inscripciones</a></li>
-                    <li><a href="./pages/iniciar_sesion.html">Iniciar Sesión</a></li>
-                    <li><a href="./pages/registrate.html">Regístrate</a></li>
-
                     <h2 class="titulos">
-                        Nuestras Redes Sociales
+                        Contáctanos
                     </h2>
-                    <a href="https://www.instagram.com">
-                    <img src="./img/instagram.jpg" alt="Instagram" class="redes-sociales">
+                    <li><a href="./pages/nosotros.html">Sobre CeleriumPatinaje</a></li>
+                    <li><a href="./pages/galeria.html">Galería</a></li>
+                    <li><a href="./pages/horarios.html">Paquetes de clases</a></li>
+                    <li><a href="./pages/contacto.html">Inscripciones</a></li>
+                    <li><a href="./pages/nosotros.html">Requisitos</a></li>
+                    <li><a href="./pages/descargas.html">Descargas</a></li>
+                    <li><a href="./pages/ubicacion.html">Ubicación</a></li>
 
-                    <a href="https://es-la.facebook.com">
-                    <img src="./img/facebook.jpg" alt="Facebook" class="redes-sociales">
-
-                    <a href="https://www.whatsapp.com">
-                    <img src="./img/whatsapp.jpg" alt="WhatsApp" class="whatsapp">
-
-                    <a href="https://workspace.google.com/intl/es/gmail">
-                    <img src="./img/gmail.jpg" alt="Gmail" class="redes-sociales">
-
-
-                    
                 </ul>
             </nav>
 
-<!-- Texto copyright / Por qué sale como enlace? -->
-            Copyright © CeleriumPatinaje. Todos los derechos reservados.
-        
-</footer>
-</div>
+            <!-- Iconos redes sociales -->
+            <a href="https://www.instagram.com">
+                <img src="./img/instagram.png" alt="Instagram" class="redes-sociales">
+
+                <a href="https://es-la.facebook.com">
+                    <img src="./img/facebook.png" alt="Facebook" class="redes-sociales">
+
+                    <a href="https://www.whatsapp.com">
+                        <img src="./img/whatsapp.png" alt="WhatsApp" class="whatsapp">
+
+                        <a href="https://workspace.google.com/intl/es/gmail">
+                            <img src="./img/gmail.png" alt="Gmail" class="redes-sociales">
+                            <h3>
+                                Copyright © CeleriumPatinaje. Todos los derechos reservados.
+                            </h3>
+
+        </footer>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
-
-
-
