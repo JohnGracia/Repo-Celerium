@@ -30,7 +30,7 @@ header h1 {
     text-align: center;
     color: rgb(59, 32, 209);
     font-family: "Michroma", sans-serif;
-    font-size: 4vw;
+    font-size: 5vw;
     position: relative;
 }
 
@@ -52,7 +52,19 @@ header nav ul li {
     justify-content: center;
 }
 
-.titulos {
+h2 {
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(60, 28, 204);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: "Michroma", sans-serif;
+}
+
+.text-uppercase {
+    margin-top: 30px;
+    text-align: left;
     color: rgb(60, 28, 204);
     text-decoration: none;
     text-transform: uppercase;
@@ -94,13 +106,13 @@ main div {
     display: grid;
     justify-content: center;
     grid-template-columns: 0fr 0fr;
-    grid-template-rows: 80px 480px;
+    grid-template-rows: 80px 280px;
     gap: 40px;
 }
 
 .grid-profesora {
-    width: 500px;
-    height: 580px;
+    width: 300px;
+    height: 380px;
 }
 
 .grid-profesora img {
@@ -123,9 +135,9 @@ main section p {
 
 /* Botón para registro */
 .boton {
-    width: 100%;
+    width: 80%;
     padding: 10px 30px;
-    margin-top: 20px;
+    margin-top: 0px;
     background-color: rgb(60, 28, 204);
     color: white;
     border: none;
@@ -133,6 +145,21 @@ main section p {
     cursor: pointer;
     font-family: "Michroma", sans-serif;
     font-size: large;
+    margin-left: 90px;
+}
+
+.boton1 {
+    width: 80%;
+    padding: 10px 30px;
+    margin-top: 0px;
+    background-color: rgb(60, 28, 204);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+    margin-left: 90px;
 }
 
 .boton:hover {
@@ -168,34 +195,23 @@ footer nav {
     gap: 0px;
 }
 
-footer nav .logo1 {
+footer section .logo1 {
     margin-top: 50px;
     mix-blend-mode: multiply;
-    width: 180px;
-    height: 130px;
+    width: 150px;
+    height: 100px;
     margin-top: 30px;
-}
-
-.grid-footer {
-    width: 100%;
-    margin-top: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 70px 120px;
-}
-
-footer nav ul li {
-    padding: 50px;
-    justify-content: center;
+    margin-left: 10px;
 }
 
 div footer nav ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-family: sans-serif;
+}
+
+div footer section div {
+    margin-left: 30px;
 }
 
 /* Iconos redes sociales */
@@ -227,49 +243,37 @@ div footer h3 {
 
 /* RESPONSIVE */
 
-@media screen and (max-width:1160px) {
-    .grid-footer {
-        width: 100%;
-        margin-top: 50px;
-        margin-left: 150px;
-        margin-right: 150px;
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 0fr;
-        grid-template-rows: 150px;
-        flex-direction: column;
-        gap: 1px;
-        flex-wrap: wrap;
-    }
-}
-
 @media screen and (max-width:680px) {
     .grid-intro {
-        width: 100%;
-        margin-top: 30px;
-        margin-left: 180px;
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
         display: flex;
-        gap: 10px;
+        gap: 20px;
         flex-direction: column;
+        align-items: center;
     }
 }
 
 @media screen and (max-width:680px) {
     .grid-profe {
         width: 100%;
-        margin-top: 30px;
-        margin-left: 180px;
+        height: auto;
+        margin-top: 20px;
         display: flex;
-        gap: 10px;
+        gap: 20px;
         flex-direction: column;
+        align-items: center;
     }
 }
 
+
 @media screen and (max-width:680px) {
     .boton {
-        width: 100%;
+        width: 65%;
+        height: auto;
         padding: 10px 30px;
-        margin-top: 320px;
+        margin-top: 20px;
         background-color: rgb(60, 28, 204);
         color: white;
         border: none;
@@ -281,17 +285,51 @@ div footer h3 {
 }
 
 @media screen and (max-width:680px) {
-    .grid-footer {
-        width: 100%;
-        margin-top: 50px;
-        margin-left: 150px;
-        margin-right: 150px;
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 0fr;
-        grid-template-rows: 150px;
+    .boton1 {
+        width: 65%;
+        height: auto;
+        padding: 10px 30px;
+        margin-top: 150px;
+        background-color: rgb(60, 28, 204);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: "Michroma", sans-serif;
+        font-size: large;
+    }
+}
+
+@media screen and (max-width:680px) {
+    header nav {
+        text-decoration: none;
+        width: 75%;
+        display: flex;
         flex-direction: column;
-        gap: 1px;
+        align-items: center;
+        justify-content: center;
+        font-family: "Michroma", sans-serif;
+        font-size: large;
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header h1 {
+        text-align: center;
+        color: rgb(59, 32, 209);
+        font-family: "Michroma", sans-serif;
+        font-size: 5.5vw;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:490px) {
+    header h1 {
+        text-align: center;
+        color: rgb(59, 32, 209);
+        font-family: "Michroma", sans-serif;
+        font-size: 6vw;
+        position: relative;
     }
 }
