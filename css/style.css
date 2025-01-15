@@ -167,9 +167,14 @@ main section p {
     color: white;
 }
 
+.boton1:hover {
+    background-color: black;
+    color: white;
+}
+
 /* Botón volver al inicio */
 .boton-inicio {
-    width: 15%;
+    width: 20%;
     padding: 10px 30px;
     margin-top: 20px;
     background-color: rgb(0, 0, 0);
@@ -188,13 +193,6 @@ main section p {
 
 /* FOOTER */
 
-footer nav {
-    background-color: rgb(69, 199, 251);
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-}
-
 footer section .logo1 {
     margin-top: 50px;
     mix-blend-mode: multiply;
@@ -202,12 +200,6 @@ footer section .logo1 {
     height: 100px;
     margin-top: 30px;
     margin-left: 10px;
-}
-
-div footer nav ul li a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-family: sans-serif;
 }
 
 div footer section div {
@@ -232,13 +224,102 @@ div footer section div {
     border: 1px solid white;
 }
 
-/*Texto copyright*/
-div footer h3 {
-    margin-top: 50px;
+.card-text {
+    text-align: justify;
+}
+
+#Ubicacion {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.ubicacion {
+    margin-top: 30px;
     text-align: center;
     font-family: "Michroma", sans-serif;
-    font-size: small;
-    text-decoration: none;
+    font-size: 1vw;
+}
+
+table.cal {
+    display: inline-block;
+    min-height: 100px;
+    width: 97%;
+    color: #06425c;
+    border-spacing: 0;
+    border: 1px solid grey;
+    border-radius: 20px 20px 20px 20px;
+    padding: 2%;
+    margin: 2%;
+}
+
+table>caption {
+    border: 5px solid rgb(128, 128, 128);
+
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(60, 28, 204);
+    color: #ffffff;
+    font-family: "Michroma", sans-serif;
+    font-size: 50px;
+    padding: 1% 1% 1% 1%;
+    margin: 2% 2% 2% 2%;
+}
+
+thead>tr>th {
+    background-color: rgb(60, 28, 204);
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+    vertical-align: center;
+    font-family: "Michroma", sans-serif;
+    font-size: 25px;
+    margin: 1%;
+    padding: 1%;
+}
+
+table.cal>tbody>th,
+td {
+    display: in-line;
+    width: 10%;
+    margin: 2%;
+    padding: 2%;
+    height: 60px;
+    border: 2px outset white;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.horas {
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+    color: #ffffff;
+}
+
+.horas1 {
+    width: 65%;
+    margin-left: 30px;
+    background-color: orange;
+    font-family: "Michroma", sans-serif;
+}
+
+.descanso {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+.patinar {
+    padding: 0;
+    margin: 0;
+    background-color: orange;
+    color: #ffffff;
 }
 
 /* RESPONSIVE */
