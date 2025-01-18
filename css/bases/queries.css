@@ -1,0 +1,85 @@
+@media screen and (max-width: 680px) {
+  .grid-intro {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 680px) {
+  .grid-profe {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 680px) {
+  .boton {
+    width: 65%;
+    height: auto;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background-color: rgb(60, 28, 204);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+  }
+}
+@media screen and (max-width: 680px) {
+  .boton1 {
+    width: 65%;
+    height: auto;
+    padding: 10px 30px;
+    margin-top: 150px;
+    background-color: rgb(60, 28, 204);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+  }
+}
+@media screen and (max-width: 680px) {
+  header nav {
+    text-decoration: none;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Michroma", sans-serif;
+    font-size: large;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 600px) {
+  header h1 {
+    text-align: center;
+    color: rgb(59, 32, 209);
+    font-family: "Michroma", sans-serif;
+    font-size: 5.5vw;
+    position: relative;
+  }
+}
+@media screen and (max-width: 490px) {
+  header h1 {
+    text-align: center;
+    color: rgb(59, 32, 209);
+    font-family: "Michroma", sans-serif;
+    font-size: 6vw;
+    position: relative;
+  }
+}
+
+/*# sourceMappingURL=queries.css.map */
