@@ -172,25 +172,6 @@ main section p {
     color: white;
 }
 
-/* Botón volver al inicio */
-.boton-inicio {
-    width: 20%;
-    padding: 10px 30px;
-    margin-top: 20px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: "Michroma", sans-serif;
-    font-size: medium;
-}
-
-.boton-inicio:hover {
-    background-color: rgb(170, 170, 170);
-    color: black;
-}
-
 .boton-enlace {
     width: auto;
     height: auto;
@@ -263,7 +244,7 @@ div footer section div {
 table.cal {
     display: inline-block;
     min-height: 100px;
-    width: 97%;
+    width: auto;
     color: #06425c;
     border-spacing: 0;
     border: 1px solid grey;
@@ -400,22 +381,6 @@ td {
     }
 }
 
-@media screen and (max-width:680px) {
-    .boton-inicio {
-        width: 65%;
-        height: auto;
-        padding: 10px 30px;
-        margin-top: 20px;
-        background-color: rgb(0, 0, 0);
-        color: white;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        font-family: "Michroma", sans-serif;
-        font-size: medium;
-    }
-
-
     @media screen and (max-width:680px) {
         header nav {
             text-decoration: none;
@@ -449,3 +414,4 @@ td {
             position: relative;
         }
     }
+}
