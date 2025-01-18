@@ -229,6 +229,8 @@ div footer section div {
 }
 
 #Ubicacion {
+    width: 900px;
+    height: 800px;
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -302,7 +304,7 @@ td {
 }
 
 .horas1 {
-    width: 65%;
+    width: 75%;
     margin-left: 30px;
     background-color: orange;
     font-family: "Michroma", sans-serif;
@@ -516,5 +518,55 @@ td {
         font-size: 18px;
         padding: 1% 1% 1% 1%;
         margin: 2% 2% 2% 2%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #Ubicacion {
+        width: 700px;
+        height: 600px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    #Ubicacion {
+        width: 550px;
+        height: 450px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #Ubicacion {
+        width: 400px;
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:560px) {
+    #Ubicacion {
+        width: 300px;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:440px) {
+    #Ubicacion {
+        width: 250px;
+        height: 150px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
     }
 }
