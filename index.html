@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- SASS -->
-     <!-- <link rel="stylesheet" href="./scss/estilos.scss"> -->
+    <!-- <link rel="stylesheet" href="./scss/estilos.scss"> -->
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,10 +31,9 @@
             <a href="#"><img src="./img/celerium.jpg" class="logo" alt="LogoCelerium">
             </a>
             <ul>
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./pages/nosotros.html">Nosotros</a></li>
                 <li><a href="./pages/horarios.html">Horarios</a></li>
-                <li><a href="./pages/ubicacion.html">Ubicación</a></li>
-                <li><a href="./pages/galeria.html">Galería</a></li>
                 <li><a href="./pages/descargas.html">Descargas</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
@@ -42,46 +41,62 @@
         <h1>CELERIUMPATINAJE</h1>
     </header>
 
-    <!-- Grid (descripción empresa) -->
+    <!-- Botón de registro 
+        <aside>
+            <a href="./pages/contacto.html">
+                <button class="boton"> Inscribete aquí</button>
+            </a>
+        </aside>
+        -->
+    <h2> Aprende a patinar con nosotros </h2>
+
     <main>
-        <div>
-            <section class="grid-intro">
-                <img src="./img/introduccion.jpg" alt="introduccion" class="grid-imagen">
-                <p class="grid-imagen">La escuela de formación deportiva en patinaje CELERIUM, busca desarrollar en
-                    niños y
-                    jóvenes sus capacidades físicas coordinativas y condicionales así como los valores que proporciona
-                    la
-                    práctica del deporte, como lo son el trabajo en equipo, la disciplina, responsabilidad, el respeto
-                    por
-                    sí y
-                    por el otro, por medio del deporte, específicamente el patinaje en algunas de sus modalidades.</p>
-
-            </section>
-        </div>
-    </main>
-
-    <!-- Botón de registro -->
-    <aside>
-        <a href="./pages/contacto.html">
-            <button class="boton"> Inscribete aquí</button>
-        </a>
-    </aside>
-
-    <!-- Grid (descripción profe) -->
-    <main>
-        <div>
-            <h2>Directora General: Estefanía Alvarado Ortiz</h2>
-            <section class="grid-profe">
-                <img src="./img/profe.png" alt="introduccion" class="grid-profesora">
-                <p class="grid-imagen">Estefanía es una profesora de patinaje entusiasta y dedicada que trabaja con
-                    niños de diferentes edades y niveles. Su enfoque cálido y paciente crea un ambiente de confianza y
-                    diversión, donde los niños no solo aprenden a patinar, sino también habilidades como coordinación,
-                    equilibrio y trabajo en equipo. Se adapta a las necesidades de cada alumno, brindando instrucciones
-                    claras y celebrando sus logros. Además, se asegura de que los estudiantes se sientan cómodos y
-                    seguros, fomentando la disciplina y el esfuerzo, mientras disfrutan del proceso de aprendizaje.
-                </p>
-            </section>
-        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <h2 class="card-title">Introduccion</h2>
+                    <img src="./img/introduccion.jpg" class="card-img-top" alt="Introduccion" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            La escuela de formación deportiva en patinaje CELERIUM, busca desarrollar en
+                            niños y
+                            jóvenes sus capacidades físicas coordinativas y condicionales así como los valores que
+                            proporciona
+                            la
+                            práctica del deporte, como lo son el trabajo en equipo, la disciplina, responsabilidad, el
+                            respeto
+                            por
+                            sí y
+                            por el otro, por medio del deporte, específicamente el patinaje en algunas de sus
+                            modalidades.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <h2 class="card-title">Nuestra Profe</h2>
+                    <img src="./img/profe.png" class="card-img-top" alt="Profe" />
+                    <div class="card-body">
+                        <p class="card-text">Estefanía es una profesora de patinaje entusiasta y dedicada que trabaja
+                            con
+                            niños de diferentes edades y niveles. Su enfoque cálido y paciente crea un ambiente de
+                            confianza y
+                            diversión, donde los niños no solo aprenden a patinar, sino también habilidades como
+                            coordinación,
+                            equilibrio y trabajo en equipo. Se adapta a las necesidades de cada alumno, brindando
+                            instrucciones
+                            claras y celebrando sus logros. Además, se asegura de que los estudiantes se sientan cómodos
+                            y
+                            seguros, fomentando la disciplina y el esfuerzo, mientras disfrutan del proceso de
+                            aprendizaje.</p>
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
+            </div>
     </main>
 
     <!-- Botón de registro -->
@@ -165,7 +180,7 @@
                                 <img src="./img/gmail.png" alt="Gmail" class="redes-sociales"></a>
             </div>
 
-            
+
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
                 Copyright © CeleriumPatinaje. Todos los derechos reservados.
             </div>
