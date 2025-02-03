@@ -24,100 +24,115 @@
 
     <!-- Header (logo y barra de navegación) -->
     <header>
-        <nav>
-            <a href="#"><img src="../img/celerium.jpg" alt="LogoCelerium" class="logo">
-            </a>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./horarios.html">Horarios</a></li>
-                <li><a href="./descargas.html">Descargas</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar bg-light fixed">
+            <div class="container-fluid">
+                <a href="#"><img src="../img/celerium.jpg" class="logo" alt="LogoCelerium">
+                </a>
+                <a class="navbar-brand" href="#">
+                    <h1>CELERIUMPATINAJE</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CeleriumPatinaje</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/horarios.html">Horarios y Ubicación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/descargas.html">Descargas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                    </div>
+                </div>
+            </div>
         </nav>
-        <h1>CELERIUMPATINAJE</h1>
     </header>
 
-    <div class="contenedor">
-        <div class="wrapper animated bounceInLeft">
-            <div class="info-empresa">
-                <h3>Escuela de Patinaje Celerium</h3>
-                <ul class="servicios">
-                    <li><i class="fa fa-map-marker"></i> Parque Zonal Atahualpa - Carrera 113 # 23 G-15. Bogotá - Colombia</li>
-                    <li><i class="fa fa-mobile"></i> Teléfono: 310 221 06 45</li>
-                    <li><i class="fa fa-envelope"></i> email: celeriumpatinaje@gmail.com</li>
-                </ul>
-            </div>
-            <div class="contacto">
-                <h3> Solicita más información: </h3>
-                <form class="formulario">
-                    <p>
-                        <label>Nombre</label>
-                        <input type="text" name="nombre" required>
-                    </p>
-                    <p>
-                        <label>Apellido</label>
-                        <input type="text" name="empresa">
-                    </p>
-                    <p>
-                        <label>Email</label>
-                        <input type="email" name="email" required>
-                    </p>
-                    <p>
-                        <label>Teléfono</label>
-                        <input type="text" name="teléfono" required>
-                    </p>
-                    <p class="full">
-                        <label>Mensaje</label>
-                        <textarea name="mensaje" required></textarea>
-                    </p>
-                    <p class="full">
-                        <button class="boton-enviar">Enviar</button>
-                    </p>
-                </form>
+    <main>
+        <h2> "Entrena con pasión, patina con estilo" </h2>
+
+        <hr class="hr hr-blurry" />
+        <hr class="hr hr-blurry" />
+
+        <div class="row row-cols-1 row-cols-md-1 g-6">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3>🛼 VEN Y ENTRENA CON NOSOTROS 🛼</h3>
+                        <p class="card-text">
+                            Para realizar la inscripción a nuestra escuela de patinaje, por favor diligencia este formulario.  Recuerda que tendrás acceso a una clase de cortesía en el horario disponible.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe32rMdbMCol2Uaynoezonmsu5QaJNLxz7AcebHeNyfJSG-JQ/viewform">
+                            <button class="boton-enlace"> Formulario de Registro </button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
+        <hr class="hr hr-blurry" />
+        <hr class="hr hr-blurry" />
 
-    <!-- 
-    <main>
-        <br action="/submit" method="post">
-
-        <label for="genero">Género:</label>
-        <input type="radio" name="" id="">
-        <label for="">Masculino</label>
-
-        <input type="radio" name="" id="">
-        <label for="">Femenino</label></br></br>
-
-        <label for="Nombre">Nombre/s:</label>
-        <input type="text" name="nombre" id="nombre">
-        </form></br></br>
-
-        <label for="Apellido">Apellido/s:</label>
-        <input type="text" name="nombre" id="nombre"></form></br></br>
-
-        <label for="Edad">Edad:</label>
-        <input type="text" name="nombre" id="nombre"></form></br></br>
-
-        <label for="Telefono">Teléfono:</label>
-        <input type="text" name="nombre" id="nombre"></form></br></br>
-
-        <label for="Direccion">Dirección:</label>
-        <input type="text" name="nombre" id="nombre"></form></br></br>
-
-        <label for="email">Email:</label>
-        <input type="text" name="nombre" id="nombre"></form></br></br>
-
-        <label for="ciudad">Horario preferido</label>
-        <select name="" id="">
-            <option value="">Sábados</option>
-            <option value="">Domingos</option>
-            <option value="">Fin de semana completo</option>
-        </select>
+        <div class="contenedor">
+            <div class="wrapper animated bounceInLeft">
+                <div class="info-empresa">
+                    <h3>Escuela de Patinaje Celerium</h3>
+                    <ul class="servicios">
+                        <li><i class="fa fa-map-marker"></i> Parque Zonal Atahualpa - Carrera 113 # 23 G-15. Bogotá -
+                            Colombia</li>
+                        <li><i class="fa fa-mobile"></i> Teléfono: 310 221 06 45</li>
+                        <li><i class="fa fa-envelope"></i> email: celeriumpatinaje@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="contacto">
+                    <h3> Solicita más información: </h3>
+                    <form class="formulario">
+                        <p>
+                            <label>Nombre</label>
+                            <input type="text" name="nombre" required>
+                        </p>
+                        <p>
+                            <label>Apellido</label>
+                            <input type="text" name="empresa">
+                        </p>
+                        <p>
+                            <label>Email</label>
+                            <input type="email" name="email" required>
+                        </p>
+                        <p>
+                            <label>Teléfono</label>
+                            <input type="text" name="teléfono" required>
+                        </p>
+                        <p class="full">
+                            <label>Mensaje</label>
+                            <textarea name="mensaje" required></textarea>
+                        </p>
+                        <p class="full">
+                            <button class="boton-enviar">Enviar</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
--->
 
     <!-- Footer (logo y menú de acceso rápido) -->
     <div>
@@ -128,54 +143,44 @@
                 <!--Grid row-->
                 <div class="row">
                     <!--Grid column-->
-                    <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
-                        <h2 class="text-uppercase">Quienes somos</h2>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h4 class="text-uppercase">Quienes somos</h4>
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a class="text-body" href="../pages/nosotros.html">Sobre CeleriumPatinaje</a>
+                                <a class="text-body" href="./pages/nosotros.html">Sobre CeleriumPatinaje</a>
                             </li>
                             <li>
-                                <a class="text-body" href="../pages/nosotros.html">Requisitos</a>
+                                <a class="text-body" href="./pages/nosotros.html">Requisitos</a>
                             </li>
                         </ul>
                     </div>
-                    <!--Grid column-->
 
                     <!--Grid column-->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h2 class="text-uppercase">Recursos</h2>
+                        <h4 class="text-uppercase">Recursos</h4>
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a class="text-body" href="../pages/galeria.html">Galería</a>
-                            </li>
-                            <li>
-                                <a class="text-body" href="../pages/descargas.html">Descargas</a>
+                                <a class="text-body" href="./pages/descargas.html">Descargas</a>
                             </li>
                         </ul>
                     </div>
                     <!--Grid column-->
 
-                    <!--Grid column-->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h2 class="text-uppercase">Acceso Rápido</h2>
+                        <h4 class="text-uppercase">Acceso Rápido</h4>
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a class="text-body" href="../pages/horarios.html">Paquetes de clases</a>
+                                <a class="text-body" href="./pages/contacto.html">Inscripciones</a>
                             </li>
                             <li>
-                                <a class="text-body" href="../pages/contacto.html">Inscripciones</a>
-                            </li>
-                            <li>
-                                <a class="text-body" href="../pages/ubicacion.html">Ubicación</a>
+                                <a class="text-body" href="./pages/horarios.html">Ubicación</a>
                             </li>
                         </ul>
                     </div>
-                    <!--Grid column-->
                 </div>
-                <!--Grid row-->
             </section>
 
             <!-- Iconos redes sociales -->

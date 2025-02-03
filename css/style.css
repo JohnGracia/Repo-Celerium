@@ -9,6 +9,7 @@
 body {
     background-color: white;
     overflow-x: hidden;
+    padding: 2%;
 }
 
 header nav .logo {
@@ -35,8 +36,8 @@ h2 {
     text-transform: uppercase;
     font-size: 2vw;
     font-family: "Michroma", sans-serif;
-    padding: 10px;
-font-style: italic;}
+    font-style: italic;
+}
 
 h3 {
     text-align: center;
@@ -47,6 +48,16 @@ h3 {
     font-family: "Michroma", sans-serif;
     padding: 20px;
 }
+
+h4 {
+    text-align: center;
+    color: rgb(60, 28, 204);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-family: "Michroma", sans-serif;
+}
+
 
 .text-uppercase {
     margin-top: 30px;
@@ -106,7 +117,6 @@ footer {
 }
 
 footer section .logo1 {
-    margin-top: 50px;
     mix-blend-mode: multiply;
     width: 150px;
     height: 100px;
@@ -134,9 +144,8 @@ div footer section div {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 20px;
     right: 40px;
-    bottom: 80px;
+    bottom: 100px;
     border: 1px solid white;
     mix-blend-mode: multiply;
 }
@@ -279,7 +288,7 @@ body {
 
 .info-empresa {
     padding: 1rem;
-    background-color: lighten( rgb(165, 222, 246), 50%);
+    background-color: lighten(rgb(165, 222, 246), 50%);
 
     h3 {
         @media screen and(min-width: $bk1) {
