@@ -356,6 +356,22 @@ body {
 /* RESPONSIVE */
 
 @media screen and (max-width:680px) {
+    body {
+        background-color: white;
+        overflow-x: hidden;
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width:490px) {
+    body {
+        background-color: white;
+        overflow-x: hidden;
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width:680px) {
     .boton1 {
         width: 65%;
         height: auto;
@@ -387,6 +403,46 @@ body {
         color: rgb(59, 32, 209);
         font-family: "Michroma", sans-serif;
         font-size: 6vw;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header h2 {
+        text-align: center;
+        color: rgb(59, 32, 209);
+        font-family: "Michroma", sans-serif;
+        font-size: 4.5vw;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:490px) {
+    header h2 {
+        text-align: center;
+        color: rgb(59, 32, 209);
+        font-family: "Michroma", sans-serif;
+        font-size: 5vw;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header h3 {
+        text-align: center;
+        color: rgb(59, 32, 209);
+        font-family: "Michroma", sans-serif;
+        font-size: 4.5vw;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:490px) {
+    header h3 {
+        text-align: center;
+        color: rgb(59, 32, 209);
+        font-family: "Michroma", sans-serif;
+        font-size: 5vw;
         position: relative;
     }
 }
